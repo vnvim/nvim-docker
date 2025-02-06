@@ -23,7 +23,7 @@ RUN mkdir -p /root/.config/nvim
 RUN git clone https://github.com/NvChad/starter ~/.config/nvim
 
 # Set working directory
-WORKDIR /root
+WORKDIR /workspace
 
 # Start Neovim by default
 CMD ["nvim"]
