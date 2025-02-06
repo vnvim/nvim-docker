@@ -5,16 +5,13 @@ FROM alpine:latest
 RUN apk add --no-cache \
     bash \
     git \
-    neovim \
-    build-base \
-    ninja \
-    cmake \
-    libtool \
-    pkgconfig \
+    gcc \
+    musl-dev \
+    make \
     curl \
     ripgrep \
-    fd \
-    tree
+    tree \
+    neovim
 
 # Set up directories for NvChad
 RUN mkdir -p /root/.config/nvim
