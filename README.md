@@ -1,5 +1,5 @@
 # nvim-docker
-Use Neovim from docker container!
+Use Neovim (NvChad v2.5 distro) from docker container!
 
 ## How to run?
 - Build image locally using

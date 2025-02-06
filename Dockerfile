@@ -16,8 +16,8 @@ RUN apk add --no-cache \
 # Set up directories for NvChad
 RUN mkdir -p /root/.config/nvim
 
-# Clone the NvChad repository
-RUN git clone https://github.com/NvChad/starter ~/.config/nvim
+# Clone the customized NvChad
+RUN git clone https://github.com/vnvim/nvchad-custom /root/.config/nvim
 
 # Set working directory
 WORKDIR /workspace
