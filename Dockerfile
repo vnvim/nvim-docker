@@ -4,13 +4,14 @@ FROM alpine:latest
 # Install necessary packages
 RUN apk add --no-cache \
     bash \
-    git \
     gcc \
     musl-dev \
     make \
     curl \
     ripgrep \
     tree \
+    git \
+    npm \
     neovim
 
 # Set up directories for NvChad
