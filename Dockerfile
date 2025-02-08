@@ -22,7 +22,7 @@ RUN apk add --no-cache neovim-doc      # Required for neovim. Do not remove
 RUN mkdir -p /root/.config/nvim
 
 # Clone the customized NvChad
-RUN git clone https://github.com/vnvim/nvchad-custom /root/.config/nvim
+RUN git clone --depth 1 https://github.com/vnvim/nvchad-custom /root/.config/nvim && rm -rf /root/.config/nvim/.git
 
 # Update the init.lua file with the OSC 52 clipboard provider configuration
 RUN printf "\n\
